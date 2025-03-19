@@ -29,6 +29,11 @@ venv\Scripts\activate  # Windows
 
 # Install dependencies
 pip install -r requirements.txt
+or
+pip install fastapi uvicorn sqlalchemy psycopg2-binary bcrypt python-jose python-multipart redis aioredis
+
+# Create the database tables
+python init_db.py
 
 # Start Redis (if using Docker)
 docker run -d --name redis -p 6379:6379 redis
