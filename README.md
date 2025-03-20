@@ -30,7 +30,7 @@ venv\Scripts\activate  # Windows
 # Install dependencies
 pip install -r requirements.txt
 or
-pip install fastapi uvicorn sqlalchemy psycopg2-binary bcrypt python-jose python-multipart redis aioredis
+pip install fastapi uvicorn sqlalchemy psycopg2-binary bcrypt python-jose python-multipart redis email-validator alembic python-dotenv
 
 # Create the database tables
 python init_db.py
