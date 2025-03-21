@@ -40,13 +40,21 @@ docker run -d --name redis -p 6379:6379 redis
 
 # Run the FastAPI server
 uvicorn main:app --reload
-```
 
+# Testing the APIs
+Open your browser and go to:
+Swagger UI: http://127.0.0.1:8000/docs
+ReDoc: http://127.0.0.1:8000/redoc
+Click on an endpoint, enter any required parameters, and hit "Execute" to test.
+
+```
+![Redoc UI](assets/RedocUI.png)
 ## **🔗 Endpoints**  
 | Method | Endpoint           | Description          | Auth Required |
 |--------|--------------------|----------------------|--------------|
 | POST   | `/register`        | Register a new user | ❌ No        |
-| POST   | `/login`           | User login (JWT)    | ❌ No        |
+| POST   | `/token`           | User login (JWT)    | ❌ No        |
+| GET    | `/me`              | Current user        | ✅ Yes       |
 | GET    | `/users`           | Get all users       | ✅ Yes       |
 | GET    | `/users/{id}`      | Get user by ID      | ✅ Yes       |
 | PUT    | `/users/{id}`      | Update user         | ✅ Yes       |
