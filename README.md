@@ -48,7 +48,7 @@ ReDoc: http://127.0.0.1:8000/redoc
 Click on an endpoint, enter any required parameters, and hit "Execute" to test.
 
 ```
-![Redoc UI](assets/RedocUI.png)
+![Redoc UI](assets/redocUI.png)
 ## **🔗 Endpoints**  
 | Method | Endpoint           | Description          | Auth Required |
 |--------|--------------------|----------------------|--------------|
