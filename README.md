@@ -38,7 +38,8 @@ pip install -r requirements.txt
 ### **Option 1: Run Everything in Docker (Recommended)**  
 This will start both FastAPI and PostgreSQL in Docker.  
 ```
-docker-compose up -d
+docker-compose up -d  # Start the FastAPI app and PostgreSQL containers
+docker exec -it fastapi_app alembic upgrade head  # Apply database migrations
 ```
 - **FastAPI will run on** `http://127.0.0.1:8000`
 - **PostgreSQL will be accessible at** `postgresql://postgres:yourpassword@db/fastcharge`
