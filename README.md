@@ -19,17 +19,20 @@ A **FastAPI** project implementing **CRUD operations** with **JWT authentication
 ## **📌 Setup & Installation**  
 
 ## Clone the repository
+```
 git clone https://github.com/yourusername/fastapi-crud-auth.git
 cd fastapi-crud-auth
-
+```
 ## Create a virtual environment
+```
 python -m venv venv
 source venv/bin/activate  # macOS/Linux
 venv\Scripts\activate  # Windows
-
+```
 ## Install dependencies
+```
 pip install -r requirements.txt
-
+```
 ## **🚀 Running the Application**  
 
 ### **Option 1: Run Everything in Docker (Recommended)**  
